@@ -36,9 +36,7 @@
     "contactPhone": "+123456789012"
  }
  
- 
  Response (201 Created):
- 
  
  {
     "id": "65abc123ef456",
@@ -63,6 +61,7 @@
  GET http://localhost:8080/api/centers
  
  Response (200 OK):
+ 
  [
     {
         "id": "65abc123ef456",
