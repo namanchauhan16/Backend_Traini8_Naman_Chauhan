@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: MVP_Traini8
+  data:
+    mongodb:
+      uri: mongodb+srv://namanchauhan2001:ADMIN@mvp-traini8.iphhw.mongodb.net/?retryWrites=true&w=majority&appName=MVP-Traini8
+      database: TrainingCentreDB
+      auto-index-creation: true
