@@ -4,9 +4,9 @@
  # Features 
  -Store training center details including name, code, address, courses offered, and contact details.
  - Validate input data (name length, alphanumeric center code, valid email, and phone number format).
- - - Auto-generate createdOn field based on the server timestamp.
-   - - Handle requests and responses in JSON format.
-     - - Implement data persistence using MongoDB.
+ - Auto-generate createdOn field based on the server timestamp.
+ - Handle requests and responses in JSON format.
+ - Implement data persistence using MongoDB.
  # Dependencies
  Ensure the following dependencies are included in your pom.xml:
  - Spring Boot Web
@@ -16,8 +16,11 @@
  # API Endpoints
  1. Create a Training Center (POST)
  Endpoint:
+
  POST http://localhost:8080/api/centers
+ 
  Request Body (JSON):
+ 
  {
     "centerName": "Tech Training Hub",
     "centerCode": "ABC123XYZ789",
@@ -32,7 +35,9 @@
     "contactEmail": "contact@techhub.com",
     "contactPhone": "+123456789012"
  }
+ 
  Response (201 Created):
+ 
  {
     "id": "65abc123ef456",
     "centerName": "Tech Training Hub",
@@ -49,9 +54,12 @@
     "contactEmail": "contact@techhub.com",
     "contactPhone": "+123456789012"
  }
+ 
  # 2. Retrieve All Training Centers (GET)
  Endpoint:
+ 
  GET http://localhost:8080/api/centers
+ 
  Response (200 OK):
  [
     {
@@ -71,6 +79,7 @@
         "contactPhone": "+123456789012"
     }
 ]
+
 # Validation Rules
 - centerName: Required, max 40 characters.
 - centerCode: Required, exactly 12 alphanumeric characters.
