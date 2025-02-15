@@ -36,7 +36,9 @@
     "contactPhone": "+123456789012"
  }
  
+ 
  Response (201 Created):
+ 
  
  {
     "id": "65abc123ef456",
